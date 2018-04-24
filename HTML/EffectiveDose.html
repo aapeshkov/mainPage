@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta  http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- http-equiv="Content-Type" content="text/html; -->
+<link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+
+  <a href="mainPage.html">MainPage</a> |
+  <a href="Activnost.html">Activnost</a> |
+  <a href="Distance.html">Distance</a> |
+  <a href="EffectiveDose.html">EffectiveDose</a> |
+  <a href="esstimateActivnost.html">EsstimateActivnost</a> |
+  <a href="esstimateTime.html">EsstimateTime</a>
+
+  </nav>
+  <!--Мощность дозы -->
+  <label><input type="radio" name="rast" value="power of dose" checked> Power of Dose</label><br>
+    <!--Эффективная доза -->
+  <label><input type="radio" name="rast" value="effective dose"> Effective Dose</label><br>
+
+  <!--Категория А -->
+  <label><input type="radio" name="rast" value="CategoryA" checked> Category A</label><br>
+    <!--Население -->
+  <label><input type="radio" name="rast" value="People"> People</label><br>
+
+  <!--Выберете элемент -->
+<label>Selected Element</br><input type="text" name="SelectedElement"></label> <br>
+<!--CF6 -->
+<label>CF6</br><input type="text" name="CF6">(mZv/chas)/(kBk)</label> <br>
+<!--CF7 -->
+<label>CF7</br><input type="text" name="CF7">(mGr/chas)/(kBk)</label> <br>
+
+<!--Активность -->
+<label>Activnost</br><input type="text" name="Activnost"></label>
+<!--Единицы измерения активности -->
+<select name="ResActivnost">
+    <option value="nBk">nBk</option>
+  <option value="mkBk">mkBk</option>
+  <option value="mBk">mBk</option>
+  <option value="Bk"  >Bk</option>
+    <option value="kBk" selected>kBk</option>
+      <option value="MBk" >MBk</option>
+
+</select> <br>
+<!--Расстояние от источника -->
+<label>Distance to source</br><input type="text" name="DistanceToSource"></label>
+<!--Единицы измерения расстояния от источника -->
+<select name="Depth">
+  <option value="m" selected>m</option>
+  <option value="km">mm</option>
+</select> <br>
+
+<!--Характеристики поглотителя  -->
+<label><input type="checkbox" id="poglotit" checked>Prisutstvuet Poglotitel </label><br>
+<label>Input Poglotitel</br><input type="text" name="InputPoglotit"></label><br>
+<label>Koefficient half oslableniya, cm</br><input type="text" name="KoefficHalf"></label><br>
+<!--Толщина экрана -->
+<label>Deepth of screen</br><input type="text" name="DepthOfScreen"></label>
+<!--Единицы измерения толщины экрана -->
+<select name="Depth">
+  <option value="mm">mm</option>
+  <option value="cm" selected>cm</option>
+  <option value="m">m</option>
+
+</select> <br>
+<br>
+<button id="Decide">Calculate</button><br>
+<br>
+
+<!--Результат Эффективная доза  -->
+<label>Result effective dose <input type="text" value="result effective dose" > </label>
+<select name="ResEffectiveDose">
+    <option value="nZv">nBk</option>
+  <option value="mkZv">mkBk</option>
+  <option value="mZv" selected>mBk</option>
+  <option value="Bk">Bk</option>
+</select> <br>
+<!--Результат мощность дозы -->
+<label>Result power of dose <input type="text" value="result power of dose" > </label>
+<select name="ResActivnost">
+    <option value="nBk">nBk</option>
+  <option value="mkBk">mkBk</option>
+  <option value="mBk">mBk</option>
+  <option value="Bk"  selected>Bk</option>
+    <option value="kBk" >kBk</option>
+      <option value="MBk" >MBk</option>
+
+</select> <br>
+
+
+</body>
+
+</html>

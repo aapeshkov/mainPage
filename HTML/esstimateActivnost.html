@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta  http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- http-equiv="Content-Type" content="text/html; -->
+<link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+
+  <a href="mainPage.html">MainPage</a> |
+  <a href="Activnost.html">Activnost</a> |
+  <a href="Distance.html">Distance</a> |
+  <a href="EffectiveDose.html">EffectiveDose</a> |
+  <a href="esstimateActivnost.html">EsstimateActivnost</a> |
+  <a href="esstimateTime.html">EsstimateTime</a>
+
+  </nav>
+  <label>Selected Element</br><input type="text" name="SelectedElement"></label> <br>
+  <label>CF7</br><input type="text" name="Period">(mGr/chas)/(kBk)</label> <br>
+  <label>Power Dose</br><input type="text" name="PowerDose"></label>
+  <select name="GrOutput">
+      <option value="nGr/chas">nGr/chas</option>
+    <option value="mkGr/chas">mkGr/chas</option>
+    <option value="mGr/chas" selected>mGr/chas</option>
+    <option value="Gr/chas" >Gr/chas</option>
+
+  </select> <br>
+  <label>Distance to Source</br><input type="text" name="DistanceToSource"></label>
+  <select name="Distance">
+
+    <option value="cm" >cm</option>
+    <option value="m" selected>m</option>
+      <option value="km">km</option>
+
+  </select> <br>
+  <br>
+  <button id="Decide">Calculate</button><br>
+  <br>
+
+  <label>Result Activnost</br><input type="text" name="ResultActivnost"></label>
+  <select name="ResActivnost">
+      <option value="nBk">nBk</option>
+    <option value="mkBk">mkBk</option>
+    <option value="mBk">mBk</option>
+    <option value="Bk"  selected>Bk</option>
+      <option value="kBk" >kBk</option>
+        <option value="MBk" >MBk</option>
+
+  </select> <br>
+
+
+  <!--Характеристики поглотителя  -->
+  <label><input type="checkbox" id="poglotit" checked>Prisutstvuet Poglotitel </label><br>
+  <label>Input Poglotitel</br><input type="text" name="InputPoglotit"></label><br>
+  <label>Koefficient half oslableniya, cm</br><input type="text" name="KoefficHalf"></label><br>
+  <label>Depth screen</br><input type="text" name="DepthScreen"></label>
+  <select name="Depth">
+    <option value="mm">mm</option>
+    <option value="cm" selected>cm</option>
+    <option value="m">m</option>
+
+  </select> <br>
+
+
+</body>
+
+</html>
